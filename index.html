@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Vacation Suggester</title>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <h1 class="text-center" id="destination">Find your vacation</h1>
+        <p class="text-center" id="destination">Just answer five short questions and set sail on your getaway.</p>
+      </div>
+      <form>
+        <div class="form-group">
+          <label for="name">What's your Name?</label>
+          <input type="text" class="form-control" name="name" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="age">What's your Age?</label>
+          <input type="number" min="18" class="form-control" name="" id="age" value="18">
+        </div>
+        <div class="form-group">
+          <label for="friends">Will you be traveling alone?</label>
+          <select type="text" class="form-control" name="" id="friends" value="">
+            <option value="false">No</option>
+            <option value="true">Yes</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="duration">How long will you travel?</label>
+          <select type="text" class="form-control" name="" id="duration" value="">
+            <option value="short">3-5 days</option>
+            <option value="medium">1-2 weeks</option>
+            <option value="long">1+ month </option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="hobby">Do you consider yourself:</label>
+          <select class="form-control" name="" id="hobby" value="">
+            <option value="adventure">Adventurous</option>
+            <option value="culture">Cultural</option>
+            <option value="food">Foodie</option>
+          </select>
+        </div>
+        <button type="submit" name="button" class="btn btn-success">Suggest Vacation</button>
+      </form>
+      <div id="suggestion">
+        <p><span class="name"></span>, we think you should travel to <span class="destination"></span>. Your apprecation for <span class="hobby"></span> would make it a great getaway for your <span class="duration"></span> vacation.
+        </p>
+        <button type="button" name="button" class="btn btn-danger" id="repeat">Other Suggestion</button>
+      </div>
+    </div>
+  </body>
+</html>
