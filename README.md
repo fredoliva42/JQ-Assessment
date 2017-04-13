@@ -8,6 +8,7 @@ JavaScript & jQuery Independent Project
 description of program:
 HTML (forms) + CSS + Bootstrap + JQuery + JavaScript
 "Vacation Suggester"
+This website propose you a destination according to your answers.
 
 program setup instructions:
 launch index.html
